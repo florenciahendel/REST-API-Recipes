@@ -1,0 +1,2 @@
+1-express validator para validar las consultas
+2-express promise para errores de consultas heroku create

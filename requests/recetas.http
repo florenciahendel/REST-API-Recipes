@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000 HTTP/1.1
+###
+GET http://localhost:3000/api/v1/recetas HTTP/1.1
+###
+GET http://localhost:3000/api/v1/recetas/6004ebfc5db4759c75ff3187 HTTP/1.1
+###
+POST http://localhost:3000/api/v1/recetas HTTP/1.1
+Content-Type : application/json
+
+{
+   "title":"Carne al Horno",
+   "description":"Deliciosa carne al horno",
+   "ingredients":"peceto de novillito",
+   "procedure":"Poner la carne al horno",
+   "time":40
+}
+###
+PUT http://localhost:3000/api/v1/recetas/6004e84ab053699b3efa9dd2 HTTP/1.1
+Content-Type : application/json
+
+{
+   "title":"huevo duro",
+   "description":"huevo duro",
+   "ingredients":"huevos, picadillo de carne",
+   "procedure":"hervir los huevos, rellenar los huevos con la mezcla de yema y picadillo",
+   "time":40
+}
+###
+DELETE http://localhost:3000/api/v1/recetas/6004ebfc5db4759c75ff3187 HTTP/1.1
